@@ -7,9 +7,9 @@ class Anagram
   end
 
   def match(words)
-    sorted_word = @word.to_a.sort
+    sorted_word = @word.split.sort
     words.each do |new_word|
-      sorted_new_word = new_word.to_a.sort
+      sorted_new_word = new_word.split.sort
       if sorted_new_word == sorted_word
         @word
       else
