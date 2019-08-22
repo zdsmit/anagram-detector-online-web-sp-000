@@ -10,6 +10,8 @@ class Anagram
     words.each do |new_word|
       if new_word.sort == @word.sort
         @word
+      else
+        []
       end
     end
   end
