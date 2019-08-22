@@ -12,7 +12,7 @@ class Anagram
     words.each do |new_word|
       sorted_new_word = new_word.split("").sort
       if sorted_new_word == sorted_word
-        matches << sorted_new_word
+        matches << new_word
       end
     end
     matches
